@@ -7,6 +7,7 @@ import pandas as pd
 from PIL import Image
 from io import BytesIO
 import streamlit as st
+import nltk
 from nltk.corpus import stopwords
 from similarity import find_similar
 from transformers import AutoTokenizer, AutoModel
@@ -27,6 +28,7 @@ def get_embeddings(tokenizer, model, text):
     return cls_pooling(model_output).detach().cpu().numpy()
 
 def preprocess(tokenizer, model, text):
+    nltk.download('stopwords')
     text = text.lower()
 
     text = re.sub('<[^>]+>', '', text)
