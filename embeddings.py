@@ -15,17 +15,22 @@ print(device)
 model = model.to(device)
 
 def cls_pooling(model_output):
-    return model_output.last_hidden_state[:, 0]
+    return model_output.last_hidden_state[:, 0] #  Shape: (batch_size, hidden_size)
 
 def get_embeddings(text):
     encoded_input = tokenizer(
         text, padding=True, truncation=True, return_tensors="pt"
     )
+    # Shape of encoded_input: 
+    #   {'input_ids': (batch_size, sequence_length),
+    #    'attention_mask': (batch_size, sequence_length)}
     encoded_input = {k: v.to(device) for k, v in encoded_input.items()}
     with torch.no_grad():
         model_output = model(**encoded_input)
+        # Shape of model_output.last_hidden_state: (batch_size, sequence_length, hidden_size)
+
     # Pool the output and move to CPU
-    return cls_pooling(model_output).detach().cpu().numpy()
+    return cls_pooling(model_output).detach().cpu().numpy() 
 
 batch_size = 32  # Adjust batch size based on GPU memory
 

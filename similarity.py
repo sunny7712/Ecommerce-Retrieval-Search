@@ -30,5 +30,5 @@ def load_faiss_index(index_path):
 
 def find_similar(query_embedding, k = 6):
     index = load_faiss_index("index")
-    distances, indices = index.search(query_embedding.reshape(1, -1), k)
+    distances, indices = index.search(query_embedding.reshape(1, -1), k) # (1, 768)
     return distances[0], indices[0]
