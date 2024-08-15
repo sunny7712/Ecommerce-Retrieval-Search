@@ -85,7 +85,7 @@ This project aims to enhance the search experience for an e-commerce platform, b
 ![Superhero t-shirt](<Imgs/Screenshot 2024-08-09 082126.png>)
 
 ## License
-
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 Your Name - [Vamsi K](mailto:sunny77katta2002@gmail.com)
