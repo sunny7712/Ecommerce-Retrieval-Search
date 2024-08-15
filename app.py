@@ -61,7 +61,7 @@ def main():
     model = model.to(device)
 
     curr_dir = os.getcwd()
-    data_path = os.path.join(curr_dir, "ZEPTO_DS", "data", "flipkart_com-ecommerce_sample.csv")
+    data_path = os.path.join(curr_dir, "Data", "data", "flipkart_com-ecommerce_sample.csv")
     df = pd.read_csv(data_path)
 
     ids = np.load("id_list.npy")
