@@ -17,8 +17,8 @@ This project aims to enhance the search experience for an e-commerce platform, b
 
 1. Data Preprocessing:
 
-* Cleans and combines relevant product information (name, description, category, specifications, brand)
-* Performs text preprocessing (removing HTML tags, lowercasing, removing punctuation and stopwords)
+    * Cleans and combines relevant product information (name, description, category, specifications, brand)
+    * Performs text preprocessing (removing HTML tags, lowercasing, removing punctuation and stopwords)
 
 
 2. Embedding Generation:
