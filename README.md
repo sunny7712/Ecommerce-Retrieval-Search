@@ -1,10 +1,18 @@
 # Search Functionality for a Ecommerce site.
 Try it out here: https://ecommerce-retrieval-search.streamlit.app/
+
 View the doc and approach for this project here: https://1drv.ms/w/s!AnO5FdGErMSuh7VXK1wgpzwajPXOGw?e=fAh5Qh
 
 ## Results
 * Query: A Red skirt
 ![A red skirt](<Imgs/Screenshot 2024-08-09 081151.png>)
+* Query: Football shoes
+![Football shoes](<Imgs/Screenshot 2024-08-09 081638.png>)
+* Query: Running shoes
+![Running shoes](<Imgs/Screenshot 2024-08-09 081959.png>)
+* Query: Superhero t-shirt
+![Superhero t-shirt](<Imgs/Screenshot 2024-08-09 082126.png>)
+
 
 ## How to run
 * Clone the repository.
