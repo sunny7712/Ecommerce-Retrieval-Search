@@ -1,5 +1,4 @@
 # Search Functionality for a Ecommerce site.
-
 * Try it out here: https://ecommerce-retrieval-search.streamlit.app/
 * View the doc and approach for this project here: https://1drv.ms/w/s!AnO5FdGErMSuh7VXK1wgpzwajPXOGw?e=fAh5Qh
 
@@ -13,48 +12,38 @@ This project aims to enhance the search experience for an e-commerce platform, b
 * Fast similarity search using FAISS (Facebook AI Similarity Search)
 * Simple and intuitive web interface
 
+
 ## How it works
-
 1. Data Preprocessing:
-
     * Cleans and combines relevant product information (name, description, category, specifications, brand)
     * Performs text preprocessing (removing HTML tags, lowercasing, removing punctuation and stopwords)
 
-
 2. Embedding Generation:
-
     * Uses the 'gte-base-1.5' embedding model (768 dimensions)
     * Converts preprocessed text into dense vector representations
 
-
 3. Similarity Search:
-
     * Utilizes FAISS for efficient storage and querying of embeddings
     * Implements L2 distance (Euclidean) for similarity measurement
 
-
 4. Query Processing:
-
     * Applies the same preprocessing to user queries
     * Generates embeddings for the query
     * Retrieves top K most similar products using FAISS
 
-
 5. Result Display:
-
     * Fetches and displays product images based on the retrieved results
 
 
 ## Tech Stack
-
-* Python: Primary programming language
-* Pandas: Data manipulation and CSV handling
-* Matplotlib: Data visualization
-* Transformers: Embedding model
-* PyTorch: Tensor operations and GPU support
-* NLTK: Text preprocessing (stopwords, stemming)
-* FAISS-CPU: Vector store for similarity search
-* Streamlit: GUI and deployment
+* *python*: Primary programming language
+* *pandas*: Data manipulation and CSV handling
+* *matplotlib*: Data visualization
+* *transformers*: Embedding model
+* *pyTorch*: Tensor operations and GPU support
+* *nltk*: Text preprocessing (stopwords, stemming)
+* *faiss-cpu*: Vector store for similarity search
+* *streamlit*: GUI and deployment
 
 
 ## Installation and Usage
@@ -64,14 +53,12 @@ This project aims to enhance the search experience for an e-commerce platform, b
 
 
 ## Future Improvements
-
 * Implement multimodal search using vision-language models like CLIP
 * Enable image-to-image and image-to-text queries
 * Fine-tune image models (e.g., ResNet, ViT) on the product dataset
 * Implement re-ranking for multimodal queries
 * Create a manually curated test set for evaluation (using metrics like Recall@K)
 * Integrate an LLM for handling malformed and multilingual queries
-
 
 
 ## Results
@@ -84,8 +71,10 @@ This project aims to enhance the search experience for an e-commerce platform, b
 * Query: Superhero t-shirt
 ![Superhero t-shirt](<Imgs/Screenshot 2024-08-09 082126.png>)
 
+
 ## License
 This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
+
 
 ## Contact
 Your Name - [Vamsi K](mailto:sunny77katta2002@gmail.com)
