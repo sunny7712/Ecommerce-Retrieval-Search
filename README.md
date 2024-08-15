@@ -23,26 +23,26 @@ This project aims to enhance the search experience for an e-commerce platform, b
 
 2. Embedding Generation:
 
-* Uses the 'gte-base-1.5' embedding model (768 dimensions)
-* Converts preprocessed text into dense vector representations
+    * Uses the 'gte-base-1.5' embedding model (768 dimensions)
+    * Converts preprocessed text into dense vector representations
 
 
 3. Similarity Search:
 
-* Utilizes FAISS for efficient storage and querying of embeddings
-* Implements L2 distance (Euclidean) for similarity measurement
+    * Utilizes FAISS for efficient storage and querying of embeddings
+    * Implements L2 distance (Euclidean) for similarity measurement
 
 
 4. Query Processing:
 
-* Applies the same preprocessing to user queries
-* Generates embeddings for the query
-* Retrieves top K most similar products using FAISS
+    * Applies the same preprocessing to user queries
+    * Generates embeddings for the query
+    * Retrieves top K most similar products using FAISS
 
 
 5. Result Display:
 
-* Fetches and displays product images based on the retrieved results
+    * Fetches and displays product images based on the retrieved results
 
 
 ## Tech Stack
